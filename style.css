@@ -1,0 +1,264 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body {
+    font-family: 'Proxima Nova', 'Helvetica', "Arial", sans-serif; 
+    font-size: 18px;
+    color: #222222;
+    margin: 0;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+}
+#header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+    border-bottom: 1px solid #ccc;
+    height: 80px;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+#mern-stack {
+    display: flex;
+    flex-direction: row;
+}
+.mern {
+    height: 50px;
+    width: 50px;
+    background-color: #ffee00;
+    margin: 3px;
+    border-radius: 100%;
+    font-weight: bold;
+    display: flex;
+    font-size: 18px;
+    color: #222222;
+    justify-content: center;
+    align-items: center ;
+    transform: rotate(-30deg);
+    font-family: 'Proxima Nova', 'Helvetica', "Arial", sans-serif; 
+}
+#quiz-image {
+    width: 100%;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/background.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#quiz-image p {
+    font-family: 'Pangolin', "Trebuchet MS", cursive;
+    font-size: 60px;
+    color: black;
+    background-color:rgba(255, 255, 255, 0.9);
+    padding: 10px;
+}
+#author {
+    align-content: center;
+    font-size: 16px;
+}
+#intro {
+    width: 100%;
+}
+#button-box {
+    background-color: #f1f1f1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.blue-button{
+    background-color: #2196F3;
+    padding : 18px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.blue-button:hover {
+    background-color: #0d8bf2;
+}
+#button-box div {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.question , .result, #question-box, #result-box {
+    width: 100%;  
+}
+.choice  {
+    background-color:  #f1f1f1;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+}
+.choice:hover {
+    background-color: #ddd;
+}
+.choice input {
+    position: absolute;
+    align-self: center;
+    margin: 0px 0px 0px 15px;
+}
+.choice label {
+    display: block;
+    padding-top: 15px;
+    padding-left: 45px;
+    width: 100%;
+
+}
+input[type="radio"]:checked + label {
+    background: #ddd;
+}
+.green-button{
+    background-color: #4CAF50;
+    padding : 18px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.green-button:hover {
+    background-color: #46a049;
+}
+.answer  {
+    background-color:  #f1f1f1;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+}
+.answer input {
+    position: absolute;
+    align-self: center;
+    margin: 0px 0px 0px 15px;
+}
+.answer label {
+    display: flex;
+    padding-top: 15px;
+    padding-left: 45px;
+    padding-bottom: 15px;
+    width: 100%;
+    justify-content: space-between;
+}
+.answer-detail{
+    position: relative;
+    margin-right: 15px;
+    
+    border-radius: 5px;
+    background-color:  rgba(0,0,0, 0.2);
+
+}
+.checked-correct-answer{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-color: #d4edda;
+}
+.checked-correct-answer input[type="radio"]:checked + label {
+    background: #d4edda;
+}
+.checked-correct-answer input{
+    position: absolute;
+    align-self: center;
+    margin: 0px 0px 0px 15px;
+}
+.checked-correct-answer label{
+    display: flex;
+    padding-left: 45px;
+    width: 100%;
+    justify-content: space-between;
+}
+.wrong-answer{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-color: #f8d7da;
+}
+.wrong-answer input[type="radio"]:checked + label {
+    background: #f8d7da;
+}
+.wrong-answer input{
+    position: absolute;
+    align-self: center;
+    margin: 0px 0px 0px 15px;
+}
+.wrong-answer label{
+    display: flex;
+    padding-left: 45px;
+    width: 100%;
+    justify-content: space-between;
+}
+.uncheck-correct-answer{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-color: #ddd;
+}
+.uncheck-correct-answer input{
+    position: absolute;
+    align-self: center;
+    margin: 0px 0px 0px 15px;
+}
+.uncheck-correct-answer label{
+    display: flex;
+    padding-left: 45px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+@media (max-width: 700px) {
+    body{
+        width: 95%;
+    }
+    section{
+        width: 100%;
+    }
+    article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+}
+
+@media (max-width: 500px) {
+    #mern-stack {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
